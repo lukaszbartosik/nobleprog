@@ -1,0 +1,16 @@
+<h1>
+Aktualny czas
+</h1>
+
+<p>
+Aktualny czas:
+<strong>
+    <%= @current_time%>
+    </strong>
+</p>
+
+<% if daytime?%>
+<img src= "<%=asset_path 'day.jpg'%>">
+<%else%>
+<img image_tag 'night.jpg'>
+<%end%>
