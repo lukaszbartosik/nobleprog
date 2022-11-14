@@ -5,7 +5,8 @@ class StaticPagesController < ApplicationController
         elsif params[:lang] == 'es'
             render "privacy_es"
         else
-            render "privacy"
+            @privacy_tekst = Faker::Lorem.paragraphs(number: 6)
+#            render "privacy"
         end
     end
 
